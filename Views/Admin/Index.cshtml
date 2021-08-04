@@ -1,0 +1,20 @@
+﻿
+
+
+@model IEnumerable<Swift.Models.UserAccount>
+<h2>Profile</h2>
+<table class="table">
+    
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+    </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>@item.UserId</td>
+            <td>@item.Username</td>
+        </tr>
+    }
+</table>
+<a class="btn btn-success" asp-action="ExportToExcel">Export</a>
