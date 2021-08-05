@@ -68,11 +68,12 @@ hr {
 .link-hover:hover {
   color: #f78a74;
 }
-.link--green{
+
+.link-green {
   color: #3e563e;
   transition: color 0.2s;
 }
-.link--green:hover{
+.link-green:hover{
   color: #000;
 }
 
