@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\swift\\Swift.csproj": {}
+    "D:\\swift\\Swift.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\swift\\Swift.csproj": {
+    "D:\\swift\\Swift.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\swift\\Swift.csproj",
+        "projectUniqueName": "D:\\swift\\Swift.csproj",
         "projectName": "Swift",
-        "projectPath": "C:\\Users\\User\\Desktop\\swift\\Swift.csproj",
+        "projectPath": "D:\\swift\\Swift.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\swift\\obj\\",
+        "outputPath": "D:\\swift\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
