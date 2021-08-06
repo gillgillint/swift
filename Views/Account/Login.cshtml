@@ -1,11 +1,53 @@
 ﻿@model UserAccount
 
-<h2>Login</h2>
 
-<div>
-    <form asp-action="LoginAction">
-        <input asp-for="Username" name="Username" id="Username">
-        <input asp-for="Password" name="Password" id="Password">
-        <button class="btn btn-success" type="submit">
-    </form>
+<div class="container my-5">
+   <div class="row">
+        <div class="col-md-6">
+            <img src="~/img/login-img.jfif" alt="sign up phhoto" class="sign-img">
+        </div>
+        <div class="col-md-6">
+            <h2 class="mb-3">Login</h2>
+            <div class="facebook-login mb-3 d-flex ">
+                    <div class="d-flex align-items-center">
+                    <i class="fab fa-facebook-square  text-white mr-3 ml-1 "></i>
+                    <p class="text-white">Login with Facebook</p>
+                    </div>
+                </div>
+                <div class="twitter-login  d-flex mb-3">
+                    <div class="d-flex align-items-center">
+                    <i class="fab fa-twitter text-white mr-3 ml-1 "></i>
+                    <p class="text-white">Login with Twitter</p>
+                    </div>
+                </div>
+                <div class="google-login  d-flex ">
+                    <div class="d-flex align-items-center">
+                    <i class="fab fa-google text-white mr-3 ml-1 "></i>
+                    <p class="text-white">Login with Google</p>
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+            <form asp-action="LoginAction">
+                <div class="form-group">
+                    <label for="Username" class="font-weight-bold">Username or Email Address</label>
+                    <input asp-for="Username" name="Username" id="Username" class="form__input form__input--sign-up">
+                </div>
+                <div class="form-group">
+                    <div class="d-flex justify-content-between">
+                        <label for="password" class="font-weight-bold">Password</label>
+                        <a href="#" class="">Forgot password?</a>
+                    </div>
+                    <input asp-for="Password" name="Password" id="Password"class="form__input form__input--sign-up">
+                    <button class="btn btn-outline-dark w-100 mt-4" type="submit">Login</button>
+                </div>
+            </form>
+            <span class="text-center"><p class="text-dark">Not a member ? <a asp-area="" asp-controller="Account" asp-action="Register">Sign up now</a></p></span>
+        </div>
+   </div>  
 </div>
+
+
+
+
