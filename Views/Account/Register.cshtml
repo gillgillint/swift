@@ -1,12 +1,57 @@
 ﻿@model UserAccount
 
-<h2>Register</h2>
 
-<div>
-    <form asp-action="RegisterAction">
-        <input asp-for="Username" name="Username" id="Username" required>
-        <input asp-for="Password" name="Password" id="Password" required>
-        <button class="btn btn-success" type="submit" placeholder="Register">
-    </form>
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="~/img/sign-img.jpg" alt="sign up phhoto" class="sign-img">
+        </div>
+        <div class="col-md-6">
+            <h2 class="mb-3">Sign Up</h2>
+                <div class="facebook-login mb-3 d-flex ">
+                    <div class="d-flex align-items-center">
+                    <i class="fab fa-facebook-square  text-white mr-3 ml-1 "></i>
+                    <p class="text-white">Sign Up with Facebook</p>
+                    </div>
+                </div>
+                <div class="twitter-login  d-flex mb-3">
+                    <div class="d-flex align-items-center">
+                    <i class="fab fa-twitter text-white mr-3 ml-1 "></i>
+                    <p class="text-white">Sign Up with Twitter</p>
+                    </div>
+                </div>
+                <div class="google-login  d-flex ">
+                    <div class="d-flex align-items-center">
+                    <i class="fab fa-google text-white mr-3 ml-1 "></i>
+                    <p class="text-white">Sign Up with Google</p>
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+            <form asp-action="RegisterAction">
+                <div class="form-group">
+                    <div class="d-flex flex-column">
+                        <label for="Username" class="font-weight-bold">Username</label>
+                        <input asp-for="Username" type="text" name="Username" id="Username" required class="form__input form__input--sign-up d-block">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="d-flex flex-column">
+                        <label for="email" class="font-weight-bold">Email</label>
+                        <input type="email" name="Username" id="Username" class="form__input form__input--sign-up d-block">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="d-flex flex-column">
+                        <label for="password" class="font-weight-bold">Password</label>
+                        <input asp-for="Password" type="password" name="Password" id="Password" required class="form__input form__input--sign-up d-block">
+                    </div>
+                </div>
+               
+                
+                <button class="btn btn-outline-dark w-100 mt-4" type="submit" placeholder="Register">Sign Up</button>
+            </form>
+        </div>
+    </div>
 </div>
-

@@ -1,13 +1,8 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
+﻿a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
 }
-
-
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -18,8 +13,6 @@ html {
     font-size: 16px;
   }
 }
-
-
 .border-top {
   border-top: 1px solid #e5e5e5;
 }
@@ -28,7 +21,7 @@ html {
 }
 
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
 }
 
 button.accept-policy {
@@ -36,17 +29,16 @@ button.accept-policy {
   line-height: inherit;
 }
 
-
-
 body {
-  font-family: 'Montserrat', sans-serif ;
+  font-family: "Montserrat", sans-serif;
 }
-p{
+p {
   color: #868686;
   font-family: sans-serif;
   font-size: 15px;
+  margin-bottom: 0;
 }
-h4{
+h4 {
   line-height: normal;
 }
 
@@ -54,6 +46,10 @@ hr {
   width: 100% !important;
   height: 1px !important;
   border-top: 1px solid rgba(94, 90, 73, 0.11) !important;
+}
+
+ul,ol,dl{
+  margin-bottom: 0;
 }
 
 /*----------- Utility ----------- */
@@ -68,105 +64,107 @@ hr {
 .link-hover:hover {
   color: #f78a74;
 }
-
+.link-hover-text {
+  color: #000;
+  transition: all 0.2s;
+}
+.link-hover-text:hover {
+  color: #f78a74;
+  text-decoration: none;
+}
 .link-green {
   color: #3e563e;
   transition: color 0.2s;
 }
-.link-green:hover{
+.link-green:hover {
   color: #000;
 }
 
-
 /* Component */
 
-.btn{
+.btn {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
   font-size: 11px;
   background-color: #fff;
-  color:#000 ;
-  transition: all .2s;
+  color: #000;
+  transition: all 0.2s;
   padding: 9px;
 }
-.btn:hover{
+.btn:hover {
   background: #000;
   color: #fff;
 }
-.btn--green{
-background-color: #3e563e;
-color: #fff;
+.btn--green {
+  background-color: #3e563e;
+  color: #fff;
 }
-.btn--green:hover{
+.btn--green:hover {
   background: #000;
 }
 
-.form__input{
+.form__input {
   font-weight: 400;
   color: #888;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 11px;
-  padding: .7rem .75em;
+  padding: 0.7rem 0.75em;
   border-radius: 3px;
   border: none;
   width: 100%;
 }
-.form__input:focus{
+.form__input:focus {
   outline: none;
 }
-@media only screen and (min-width:786px) {
-
-  .form__input{
+@media only screen and (min-width: 786px) {
+  .form__input {
     width: 350px;
   }
 }
-
-
 
 /*--------- Hero section ------ */
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../../../../img/hero1.jpg);
-  height:94vh;
+  height: 94vh;
   background-size: cover;
   background-position: center;
   position: relative;
 }
+
 .text__main {
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   max-width: 100%;
 }
-.text__sub{
+.text__sub {
   position: absolute;
   bottom: 10px;
   margin-bottom: 20px;
   text-align: center;
-  color:#fff;
+  color: #fff;
   font-weight: 500;
-  
 }
-.episode{
+.episode {
   font-size: 15px;
   text-transform: uppercase;
   color: #fff;
   font-weight: 500;
- 
 }
-.hero__title{
-  font-family: 'Prata', serif;
+.hero__title {
+  font-family: "Prata", serif;
   color: #fff;
   font-size: 60px;
   line-height: 1.5;
   margin-bottom: 28px;
   margin-top: 31px;
 }
-.hero__date{
+.hero__date {
   font-size: 16px;
   font-weight: 400;
   color: #fff;
@@ -174,28 +172,75 @@ color: #fff;
 
 /* Main Content */
 
-.subscribe{
+.subscribe {
   margin: 65px 0;
   padding: 50px;
   background: #f4f4f4;
   display: flex;
   align-items: center;
 }
-.post__box{
+.post__box {
   height: 189px;
   margin-bottom: 15px;
 }
 
-.post__episode{
+.post__episode {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;
   color: #41473f;
-  opacity: .5;
-  margin:15px 0;
+  opacity: 0.5;
+  margin: 15px 0;
 }
 
 /* Side Content */
-.wes{
+.wes {
   clip-path: polygon(0 0, 100% 0, 100% 81%, 0 94%);
+}
+.side-pop-img {
+  width: 50px;
+  height: 50px;
+}
+
+/*----------------- Sign Up Page -----------------------*/
+.sign-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.facebook-login {
+  background-color: #4267b2;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.facebook-login:hover,
+.twitter-login:hover,
+.google-login:hover {
+  background: #000;
+}
+.facebook-login .fab,
+.twitter-login .fab,
+.google-login .fab {
+  font-size: 21px;
+}
+.twitter-login {
+  background-color: #1da1f2;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.google-login {
+  background-color: #DB4437;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.form__input--sign-up {
+  background: #f3f3f4;
+  width: 100%;
+  text-transform: none;
 }
