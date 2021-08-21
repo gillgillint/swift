@@ -1,4 +1,6 @@
+using System;
 using System.Linq;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Swift.Models;
 
@@ -49,6 +51,8 @@ namespace Swift.Controllers
                 return RedirectToAction("Login","Account");
             }
         }
+
+
 
         [Route("/account/profile")]
         public IActionResult Profile()

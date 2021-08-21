@@ -1,20 +1,123 @@
-﻿
+﻿@model IEnumerable<Swift.Models.UserAccount>
 
 
-@model IEnumerable<Swift.Models.UserAccount>
-<h2>Profile</h2>
-<table class="table">
-    
-    <tr>
-        <th>Id</th>
-        <th>Name</th>
-    </tr>
-    
-    @foreach (var item in Model) {
-        <tr>
-            <td>@item.UserId</td>
-            <td>@item.Username</td>
-        </tr>
-    }
-</table>
-<a class="btn btn-success" asp-action="ExportToExcel">Export</a>
+
+
+
+<div class="container my-4">
+    <h2 class="mb-3">Users</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="w-25">@item.UserId</td>
+                    <td class="w-25">@item.Username</td>
+                    <td class="w-50">1234@gmail.com</td>
+                    <td>
+                        <div class="d-flex">
+                            <button class="btn btn--green mr-3" data-toggle="modal" data-target="#editUser">Details</button>
+                            <button class="btn  btn--delete" data-toggle="modal" data-target="#deleteUser">Delete</button>
+
+                        </div>
+                    </td>
+                </tr>
+
+
+
+
+
+
+
+            }
+        </tbody>
+    </table>
+
+    <div class="row">
+        <a class="btn btn-outline-dark ml-auto mr-4" asp-action="ExportToExcel">Export</a>
+    </div>
+</div>
+
+
+
+@* Modal *@
+
+<div class="modal blur" id="editUser">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Details User</h4>
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">firstname</label>
+                                <input class="form-control" type="text" value="*****" disabled/>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Lastname</label>
+                                <input class="form-control" type="text" value="*****" disabled/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-label">Email Address</label>
+                                <input class="form-control" type="text" value="*****" disabled/>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Birth day</label>
+                                <input class="form-control" type="date" value="2018-12-13" disabled/>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal blur" id="deleteUser">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Delete Account ?</h4>
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nam.
+            </div>
+            <div class="modal-footer">
+                <button data-dismiss="modal" class="btn btn--delete">Delete</button>
+                <button data-dismiss="modal" class="btn btn-outline-dark">Cancle</button>
+            </div>
+        </div>
+    </div>
+</div>

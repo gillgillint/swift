@@ -1,19 +1,62 @@
 ﻿@{
+
+
+
     ViewData["Title"] = "Home Page";
 }
 
 
-<section class="hero">
-    <div class="hero__text d-flex justify-content-center align-items-center ">
+<section id="hero">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-        <div class="text__main container">
-            <span  class="episode">Episode</span>
-            <h1 class="hero__title">The &nbsp;Pod</h1>
-            <span class="hero__date">Aug &nbsp;1,&nbsp; 2021</span>
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item carousel-img-1 carousel-img active">
+                <div class="hero__text d-flex justify-content-center align-items-center ">
+
+                    <div class="text__main container">
+                        <span class="episode">Episode</span>
+                        <h1 class="hero__title">The &nbsp;Pod</h1>
+                        <span class="hero__date">Aug &nbsp;1,&nbsp; 2021</span>
+                    </div>
+                    <div class="text__sub container d-none d-sm-block ">
+                        <span>by &nbsp; JOEL&nbsp;BEATH</span>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-img-2 carousel-img">
+                <div class="hero__text d-flex justify-content-center align-items-center ">
+
+                    <div class="text__main container">
+                        <span class="episode">Episode</span>
+                        <h1 class="hero__title">Milkman’s Cottage</h1>
+                        <span class="hero__date">Aug &nbsp;1,&nbsp; 2021</span>
+                    </div>
+                    <div class="text__sub container d-none d-sm-block ">
+                        <span>by &nbsp; JOEL&nbsp;BEATH</span>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-img-3 carousel-img">
+                <div class="hero__text d-flex justify-content-center align-items-center ">
+
+                    <div class="text__main container">
+                        <span class="episode">Episode</span>
+                        <h1 class="hero__title">Leak &nbsp;Como</h1>
+                        <span class="hero__date">Aug &nbsp;5,&nbsp; 2021</span>
+                    </div>
+                    <div class="text__sub container d-none d-sm-block">
+                        <span>by &nbsp; JOEL&nbsp;BEATH</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="text__sub container ">
-            <span>by  &nbsp; JOEL&nbsp;BEATH</span> 
-        </div>
+
     </div>
 </section>
 
@@ -28,101 +71,119 @@
             </form>
         </div>
 
-      <div class="row">
-      <section class="content__main col-md-8 d-flex flex-column">
-            <iframe class="w-100" style="height:475px;" src="https://www.youtube.com/embed/UpU0DZXTGA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="row">
+            <section class="content__main col-md-8 d-flex flex-column">
+                <iframe class="w-100" style="height:475px;" src="https://www.youtube.com/embed/UpU0DZXTGA0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
 
-            <article class="d-flex flex-column mb-5">
-                <a href="#" class="post__episode">Episode</a>
-                <h4 class="font-weight-normal">Aquatic life</h4>
-                <p> Renowned oceanographer Steve Zissou (Bill Murray) has sworn vengeance upon the rare shark that devoured a member of his crew. In addition to his regular team, he is joined on his boat by Ned (Owen Wilson), a man who believes Zissou to be his father, and Jane (Cate Blanchett), a journalist pregnant by a married man. They travel the sea, all too often running into pirates and, perhaps more traumatically, various figures from Zissou's past, including his estranged wife, Eleanor (Anjelica Huston).</p>
-            </article>
-
-            <div class="post d-flex flex-sm-row flex-column mb-4">
-
-            <div class="d-flex flex-column  col-sm-6 pl-sm-0"> 
-                <img src="~/img/post1.jpg" alt="post1">
-                <div class="post__box">
-                    <article class="d-flex flex-column">
-                        <a href="#" class="post__episode">Episode</a>
-                        <h4 class="font-weight-normal">Grand budapest hotel </h4>
-                        <p> The interior of The Grand Budapest Hotel was shot in location in Gorlitz, Germany. The art department utilized the abandoned structure of an old department store, the Gorlitzer Warenhaus</p>
-                    </article>
-                </div>
-        
-                <img src="~/img/post2.jpg" alt="post2">
-                <div class="post__box">
-                    <article class="d-flex flex-column">
-                        <a href="#" class="post__episode">Episode</a>
-                        <h4 class="font-weight-normal">Fantastic Mr. Fox</h4>
-                        <p> An urbane fox cannot resist returning to his farm raiding ways and then must help his community survive the farmers' retaliation.</p>
-                    </article>
-                </div>
-                <img src="~/img/post3.jpg" alt="post3">
-                <div class="post__box">
-                    <article class="d-flex flex-column">
-                        <a href="#" class="post__episode">Episode</a>
-                        <h4 class="font-weight-normal">Rushmore</h4>
-                        <p> The dazzling sophomore film from Wes Anderson is equal parts coming-of-age story, French New Wave homage, and screwball comedy.</p>
-                    </article>
-                </div>
-            </div>
-
-        <div class="d-flex flex-column col-sm-6 pr-sm-0">
-             <img src="~/img/post4.jpg" alt="post4" >
-             <div class="post__box">
-                <article class="d-flex flex-column">
+                <article class="d-flex flex-column mb-5">
                     <a href="#" class="post__episode">Episode</a>
-                    <h4 class="font-weight-normal">Moonrise kingdom</h4>
-                    <p > Moonrise Kingdom is a 2012 American coming-of-age comedy-drama film directed by Wes Anderson, written by Anderson and Roman Coppola. It features an ensemble cast including Bruce Willis</p>
+                    <h4 class="font-weight-normal">Aquatic life</h4>
+                    <p> Renowned oceanographer Steve Zissou (Bill Murray) has sworn vengeance upon the rare shark that
+                        devoured a member of his crew. In addition to his regular team, he is joined on his boat by Ned
+                        (Owen Wilson), a man who believes Zissou to be his father, and Jane (Cate Blanchett), a
+                        journalist pregnant by a married man. They travel the sea, all too often running into pirates
+                        and, perhaps more traumatically, various figures from Zissou's past, including his estranged
+                        wife, Eleanor (Anjelica Huston).</p>
                 </article>
-          </div>
-            <img src="~/img/post5.jpg" alt="post5" >
-            <div class="post__box">
-                <article class="d-flex flex-column">
-                    <a href="#" class="post__episode">Episode</a>
-                    <h4 class="font-weight-normal">The Royal Tenenbaums</h4>
-                    <p>The eccentric members of a dysfunctional family reluctantly gather under the same roof for various reasons.</p>
-                </article>
-          </div>
-            <img src="~/img/post6.jpg" alt="post6" >
-            <div class="post__box">
-                <article class="d-flex flex-column">
-                    <a href="#" class="post__episode">Episode</a>
-                    <h4 class="font-weight-normal">isle of dogs</h4>
-                    <p>Set in Japan, Isle of Dogs follows a boy's odyssey in search of his lost dog.</p>
-                </article>
-          </div>
-        </div>
-    </div>
-    <img src="~/img/wes-main-film.jpg" alt="wes-film" class="">
 
-            <article class="d-flex flex-column mb-5">
-                <a href="#" class="post__episode">Episode</a>
-                <h4 class="font-weight-normal">Accidentally Wes Anderson</h4>
-                <p> Join us to discover the most interesting and idiosyncratic places on Earth. Inspired by the unique vision of director Wes Anderson’s films, this book travels to every continent to tell the extraordinary and unexpected true stories behind more than two hundred stunning locations.</p>
-            </article>
+                <div class="post d-flex flex-sm-row flex-column mb-4">
 
-</section>
+                    <div class="d-flex flex-column  col-sm-6 pl-sm-0">
+                        <img src="~/img/post1.jpg" alt="post1">
+                        <div class="post__box">
+                            <article class="d-flex flex-column">
+                                <a href="#" class="post__episode">Episode</a>
+                                <h4 class="font-weight-normal">Grand budapest hotel </h4>
+                                <p> The interior of The Grand Budapest Hotel was shot in location in Gorlitz, Germany.
+                                    The art department utilized the abandoned structure of an old </p>
+                            </article>
+                        </div>
+
+                        <img src="~/img/post2.jpg" alt="post2">
+                        <div class="post__box">
+                            <article class="d-flex flex-column">
+                                <a href="#" class="post__episode">Episode</a>
+                                <h4 class="font-weight-normal">Fantastic Mr. Fox</h4>
+                                <p> An urbane fox cannot resist returning to his farm raiding ways and then must help
+                                    his community survive the farmers' retaliation.</p>
+                            </article>
+                        </div>
+                        <img src="~/img/post3.jpg" alt="post3">
+                        <div class="post__box">
+                            <article class="d-flex flex-column">
+                                <a href="#" class="post__episode">Episode</a>
+                                <h4 class="font-weight-normal">Rushmore</h4>
+                                <p> The dazzling sophomore film from Wes Anderson is equal parts coming-of-age story,
+                                    French New Wave homage, and screwball comedy.</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column col-sm-6 pr-sm-0">
+                        <img src="~/img/post4.jpg" alt="post4">
+                        <div class="post__box">
+                            <article class="d-flex flex-column">
+                                <a href="#" class="post__episode">Episode</a>
+                                <h4 class="font-weight-normal">Moonrise kingdom</h4>
+                                <p> Moonrise Kingdom is a 2012 American coming-of-age comedy-drama film directed by Wes
+                                    Anderson, written by Anderson and Roman Coppola. It features an </p>
+                            </article>
+                        </div>
+                        <img src="~/img/post5.jpg" alt="post5">
+                        <div class="post__box">
+                            <article class="d-flex flex-column">
+                                <a href="#" class="post__episode">Episode</a>
+                                <h4 class="font-weight-normal">The Royal Tenenbaums</h4>
+                                <p>The eccentric members of a dysfunctional family reluctantly gather under the same
+                                    roof for various reasons.</p>
+                            </article>
+                        </div>
+                        <img src="~/img/post6.jpg" alt="post6">
+                        <div class="post__box">
+                            <article class="d-flex flex-column">
+                                <a href="#" class="post__episode">Episode</a>
+                                <h4 class="font-weight-normal">isle of dogs</h4>
+                                <p>Set in Japan, Isle of Dogs follows a boy's odyssey in search of his lost dog.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <img src="~/img/wes-main-film.jpg" alt="wes-film" class="">
+
+                <article class="d-flex flex-column mb-5">
+                    <a href="#" class="post__episode">Episode</a>
+                    <h4 class="font-weight-normal">Accidentally Wes Anderson</h4>
+                    <p> Join us to discover the most interesting and idiosyncratic places on Earth. Inspired by the
+                        unique vision of director Wes Anderson’s films, this book travels to every continent to tell the
+                        extraordinary and unexpected true stories behind more than two hundred stunning locations.</p>
+                </article>
+
+            </section>
 
 
             <aside class="content__side d-flex flex-column col-md-4">
-            <img src="~/img/wes_anderson.jpg" alt="" class="wes">
-            <article class="d-flex flex-column text-center mb-1">
+                <img src="~/img/wes_anderson.jpg" alt="" class="wes">
+                <article class="d-flex flex-column text-center mb-1">
                     <a href="#" class="post__episode">Director</a>
                     <h4 class="font-weight-normal">Wes Anderson</h4>
-                    <p>Wesley Wales Anderson  is an American filmmaker. His films are known for their symmetry, and he is cited by some critics as a modern-day example of the auteur.</p>
+                    <p>Wesley Wales Anderson is an American filmmaker. His films are known for their symmetry, and he is
+                        cited by some critics as a modern-day example of the auteur.</p>
                 </article>
-                <hr class="mb-5">
-
+                <hr class="mb-3">
+                <span href="#" class="post__episode text-center">Suscribe and follow</span>
                 <div class="d-flex justify-content-center ">
+
                     <a class="nav-link link-green" href="#"><i class="fab fa-twitter "></i></a>
                     <a class="nav-link link-green" href="#"><i class="fab fa-instagram"></i></a>
                     <a class="nav-link link-green" href="#"><i class="fab fa-youtube"></i></a>
                 </div>
-                <hr class="my-5">
-                
 
+                <hr class=mt-5">
+
+                <span class="post__episode text-center mb-2">Must Read</span>
                 <div class="d-flex ml-3">
                     <a href="#"><img src="~/img/side-img1.jpg" alt="side-pop-1" class="side-pop-img"></a>
                     <div class="d-flex flex-column ml-3">
@@ -144,13 +205,7 @@
                         <p class="text-muted">July 10, 2018</p>
                     </div>
                 </div>
-                
-             </aside>
-
-</div>
+            </aside>
+        </div>
     </main>
 </div>
-
-
-
-
