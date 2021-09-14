@@ -312,6 +312,11 @@ thead {
   height: 50px;
 }
 
+.categories__box{
+  height: 160px;
+  width: 100%;
+}
+
 /*----------------- Sign Up Page -----------------------*/
 .sign-img {
   max-width: 100%;
